@@ -112,7 +112,7 @@ MANAGERS = ADMINS
 # See: https://django-environ.readthedocs.io/en/latest/#supported-types
 
 DATABASES = {
-    'default': env.db('DATABASE_URL'),
+    'default': env.db('DATABASE_URL', default='postgres:///inventory'),
 }
 
 DATABASES['default']['ATOMIC_REQUESTS'] = True
