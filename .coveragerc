@@ -1,0 +1,5 @@
+[run]
+include = school_inventory/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
